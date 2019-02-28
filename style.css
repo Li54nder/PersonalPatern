@@ -1,0 +1,138 @@
+body {
+  overflow-y: hidden;
+}
+
+.view-1 {
+  background: #000b18;
+  background: -webkit-linear-gradient(#000b18, #00264d);
+  background: -o-linear-gradient(#000b18, #00264d);
+  background: -moz-linear-gradient(#000b18, #00264d);
+  background: linear-gradient(#000b18, #00264d);
+  /* background-image: url('pic1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  height: 2000px; /*Za obian maci ovaj deo... i postaviti slike(maci gradient)*/
+}
+
+.view-2 {
+  background: #00264d;
+  background: -webkit-linear-gradient(#00264d, #02386e);
+  background: -o-linear-gradient(#00264d, #02386e);
+  background: -moz-linear-gradient(#00264d, #02386e);
+  background: linear-gradient(#00264d, #02386e);
+  /* background-image: url('pic2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  height: 2000px;
+}
+
+.view-3 {
+  background: #02386e;
+  background: -webkit-linear-gradient(#02386e, #0052a2);
+  background: -o-linear-gradient(#02386e, #0052a2);
+  background: -moz-linear-gradient(#02386e, #0052a2);
+  background: linear-gradient(#02386e, #0052a2);
+  /* background-image: url('pic3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  height: 2000px;
+}
+
+.mainbag {
+  width: 100%;
+  height: auto;
+  transition: all 2000ms cubic-bezier(.07,.67,.48,1.005) 0ms;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.box {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  top: 10vh;
+  /* height: 80vh; */
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 25px black;
+}
+
+.btnL {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -50px;
+  border-radius: 20px;
+}
+
+.btnR {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -50px;
+  border-radius: 20px;
+}
+
+.div11 {
+  background-image: url("pic1.jpg");
+  background-size: cover;
+}
+
+.div12 {
+  background-image: url("pic2.jpg");
+  background-size: cover;
+}
+
+.div13 {
+  background-image: url("pic3.jpg");
+  background-size: cover;
+}
+
+.leftSide {
+  position: relative;
+  background-color: white;
+  height: 100%;
+  width: 50%;
+  border-radius: 20px 0 0 20px;
+}
+
+.image {
+  position: relative;
+  background-image: url("pic1.jpg");
+  background-size: cover;
+  top: -100%;
+  left: 50%;
+  height: 100%;
+  width: 45%;
+  box-shadow: -0px 0px 25px black;
+  z-index: 1;
+}
+
+.rightSide {
+  position: relative;
+  background-color: white;
+  top: -200%;
+  left: 95%;
+  height: 100%;
+  width: 5%;
+  border-radius: 0 20px 20px 0;
+}
+
+nav {
+  background-color: #000b18;
+  box-shadow: 0px 0px 25px black;
+}
+.navbar-brand {
+  position: absolute;
+}
+nav ul {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+nav ul li {
+  padding-left: 50px;
+  padding-right: 50px;
+}

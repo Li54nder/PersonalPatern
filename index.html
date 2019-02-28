@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"> -->
+    <link rel="stylesheet" type="text/css" href="viewScroller.min.css">
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="jquery.easing.min.js"></script>
+    <script src="jquery.mousewheel.min.js"></script>
+    <script src="viewScroller.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="load.css">
+    <link rel="stylesheet" type="text/css" href="arrow.css">
+    <script type="text/javascript" src="code.js"></script>
+    <title>...</title>
+  </head>
+
+  <body>
+    <!-- Load screen -->
+    <div class="load">
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+    </div>
+    <!-- To bottom arrow -->
+    <div class="arrow"></div>
+
+    <!-- Heder, futer i fixni elementi... -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">Naslov</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#view-1">Page 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#view-2">Page 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#view-3">Page 3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="mainbag">
+    	<div vs-anchor="view-1" class="mainview view-1">
+        <div class="subbag">
+          <!-- Podstrana -->
+			    <div vs-anchor="subview-1" class="subview">
+            <div class="box div11">
+              <div class="leftSide"></div>
+              <div class="image"></div>
+              <div class="rightSide"></div>
+              Page 1 A
+              <a href="#subview-3"><button type="button" class="btn btn-outline-light btnL">↽</button></a>
+              <button type="button" class="btn btn-outline-light vs-subview-next btnR">⇁</button>
+            </div>
+          </div>
+          <!-- Podstrana -->
+			    <div vs-anchor="subview-2" class="subview">
+            <div class="box div12">
+              Page 1 B
+              <button type="button" class="btn btn-outline-light vs-subview-prev btnL">↽</button>
+              <button type="button" class="btn btn-outline-light vs-subview-next btnR">⇁</button>
+            </div>
+          </div>
+          <!-- Podstrana -->
+			    <div vs-anchor="subview-3" class="subview">
+            <div class="box div13">
+              Page 1 C
+              <button type="button" class="btn btn-outline-light vs-subview-prev btnL">↽</button>
+              <a href="#subview-1"><button type="button" class="btn btn-outline-light btnR">⇁</button></a>
+            </div>
+          </div>
+		    </div>
+      </div>
+
+    	<div vs-anchor="view-2" class="mainview view-2">
+        <div class="box">Page 2</div>
+        <!-- Za obican ovako centriranje -->
+        <!-- <div class="vs-center-wrap">
+          <div class="vs-center">
+            Page 2
+          </div>
+        </div> -->
+      </div>
+
+    	<div vs-anchor="view-3" class="mainview view-3">
+        <div class="box">Page 3</div>
+      </div>
+    </div>
+
+  </body>
+</html>
